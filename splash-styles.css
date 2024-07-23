@@ -8,23 +8,97 @@
 }
 #character {
     position: relative;
-    bottom: 160px;
-    left: 0px;
-    background-color: black;
-    height: 50px;
+    bottom: 180px;
+    left: 20px;
+    background-color: purple;
+    height: 70px;
     width: 35px;
+    z-index: 1;
     
-    border-radius: 3px;
+    
+    border-top-left-radius: 15px;
 }
 /* miscrocosm for the portal */
 /* shadows and depth to portal and overall space */
 #portal { 
     position: absolute;
     bottom: 120px;
-    left: 725px;
+    left: 675px;
     background-color: black;
     height: 500px;
-    width: 250px;
+    width: 350px;
     border-top-right-radius: 125px;
     border-top-left-radius: 125px;
+}
+#circle {
+    position: absolute;
+    bottom: 520px;
+    left: 725px;
+    background-color: gray;
+    height: 125px;
+    width: 250px;
+    border-radius: 125px;
+}
+#portal-right-side {
+    position: absolute;
+    bottom: 150px;
+    left: 1000px;
+    background-color: gray;
+    height: 300px;
+    width: 250px;
+    
+}
+#portal-left-side {
+    position: absolute;
+    bottom: 150px;
+    left: 450px;
+    background-color: gray;
+    height: 300px;
+    width: 250px;
+}
+#eye {
+    position: relative;
+    background-color: black;
+    height: 5px;
+    width: 5px;
+    left: 25px;
+    top: 20px;
+}
+#arm {
+    position: relative;
+    height: 5px;
+    width: 30px;
+    background-color: black;
+    top: 30px;
+    left: 15px;
+}
+#sword {
+    position: relative;
+    height: 40px;
+    width: 3px;
+    background-color: black;
+    bottom: 10px;
+    left: 40px;
+}
+#hair {
+    position: absolute;
+    bottom: 55px;
+    
+    background-color: gray;
+    height: 25px;
+    width: 25px;
+    border-radius: 10px;
+}
+#legs {
+    position: absolute;
+    bottom: -1px;
+    left: 5px;
+    
+    background-color: gray;
+    height: 10px;
+    width: 25px;
+    
+}
+#portal-link {
+    
 }

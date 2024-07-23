@@ -1,0 +1,25 @@
+#nav-items {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+   
+    opacity: 0;
+}
+
+.nav-item > a{
+    font-size: x-large;
+    text-decoration: none;
+    color: black
+}
+
+#intro {
+
+    opacity: 0;
+    font-size: 100px;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-right: 100px;
+    margin-top: 200px;
+    
+}
+
