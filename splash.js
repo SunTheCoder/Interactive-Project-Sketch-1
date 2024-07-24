@@ -1,17 +1,20 @@
 window.addEventListener('load', () => {
 
 setPosition()
+
 movement()
 
 
+
 })
+
 
 const setPosition = () => {
 
   const character = document.getElementById('character')
 
   character.style.left = '20px'
-  character.style.bottom = '180px'
+  character.style.bottom = '-441px'
 
 }
 
@@ -49,21 +52,21 @@ const movement = () => {
             console.log(character.style.left)
             }
           } else if (keyName === "w") {
-            if (yPixels >= 160) {
+           
             yPixels += 10
             console.log(yPixels)
             character.style.bottom = yPixels + 'px'
             
             console.log(character.style.bottom)
-            }
+            
           } else if (keyName === "s") {
-            if (yPixels >= 170) {
+            
             yPixels -= 10
             console.log(yPixels)
             character.style.bottom = yPixels + 'px'
             
             console.log(character.style.bottom)
-            }
+            
           }
 
           // enter portal helper function
@@ -73,18 +76,81 @@ const movement = () => {
 }
 
 const enterPortal = () => {
-
+  const innerPortal = document.getElementById('inner-portal')
+  const portal = document.getElementById('portal')
   const character = document.getElementById('character')
+  
   let xPixels = +character.style.left.split('px')[0]
 
   if (xPixels === 730) {
-    // alert('entering!')
-    window.location = '/index.html'
-  
+    
+    portal.style.opacity = '0'
+    portal.style.transition = 'opacity 2s linear'
+    character.style.opacity = '0'
+    character.style.transition = 'opacity 1.2s linear'
+    innerPortal.style.opacity = '0'
+    innerPortal.style.transition = 'opacity 1.2s linear'
+   
+    setTimeout( () => {
+    
+      document.body.innerHTML =  
+      
+      `<nav id="nav">
+      <ul id="nav-items">
+      <li class="nav-item"><a href="">About</a></li>
+      <li class="nav-item"><a href="">Mission</a></li>
+      <li class="nav-item"><a href="">Résumé</a></li>
+      <li class="nav-item"><a href="">Projects</a></li>
+   
+      <li class="nav-item"><a href="">Contact</a></li>
+      </ul>
+      </nav>
+      
+      <p id="intro">You've entered the mind of Sun English Jr., an artist, programmer, farmer, musician, and dog-lover living in Prospect, Virginia.</p>
+      
+      <script src="/splash.js"></script>`
 
+  introDisplay()
+  navDisplay()
+
+    }, 2000)
   }
 
   // ideally let the animation take over as soon as the character
   // portal contact
-
+  
 }
+
+
+
+
+
+const navDisplay = () => {
+
+  const nav = document.getElementById('nav-items')
+  
+  setTimeout( ()=> {
+      
+      nav.style.opacity = 1
+      nav.style.justifyContent = 'flex-end'
+      nav.style.marginRight = '150px'
+      
+      nav.style.transition = 'opacity 1s linear'
+    }, 5000)
+  
+  }
+  
+  const introDisplay = () => {
+  
+      const intro = document.getElementById('intro')
+      
+  setTimeout( ()=> {
+          
+          
+      intro.style.opacity = '1'
+      
+      intro.style.transition = 'opacity 3s linear'
+    })
+      
+      
+  }

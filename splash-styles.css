@@ -2,18 +2,16 @@
     background-color: gray;
     height: 800px;
 }
-#ground {
-    background-color: green;
-    height: 110px;
-}
+
 #character {
     position: relative;
-    bottom: 180px;
+   
     left: 20px;
     background-color: purple;
     height: 70px;
     width: 35px;
     z-index: 1;
+    
     
     
     border-top-left-radius: 15px;
@@ -22,39 +20,62 @@
 /* shadows and depth to portal and overall space */
 #portal { 
     position: absolute;
-    bottom: 120px;
+    
     left: 675px;
     background-color: black;
-    height: 500px;
+    height: 441px;
     width: 350px;
     border-top-right-radius: 125px;
     border-top-left-radius: 125px;
+    opacity: 1;
 }
 #circle {
     position: absolute;
-    bottom: 520px;
+    bottom: 300px;
     left: 725px;
-    background-color: gray;
-    height: 125px;
-    width: 250px;
-    border-radius: 125px;
+    background-color: rgb(255, 147, 255);
+    height: 50px;
+    width: 115px;
+    border-radius: 2px;
+    border-top-right-radius: 35px;
+}
+#circletwo {
+    position: absolute;
+    bottom: 300px;
+    left: 860px;
+    background-color: rgb(255, 147, 255);;
+    height: 50px;
+    width: 115px;
+    border-radius: 2px;
+    border-top-left-radius: 35px;
 }
 #portal-right-side {
     position: absolute;
-    bottom: 150px;
+    bottom: 50px;
     left: 1000px;
     background-color: gray;
     height: 300px;
     width: 250px;
+    border-radius: 30px;
     
 }
 #portal-left-side {
     position: absolute;
-    bottom: 150px;
+    bottom: 50px;
     left: 450px;
     background-color: gray;
     height: 300px;
     width: 250px;
+    border-radius: 30px;
+}
+#inner-portal {
+    position: relative;
+    height: 100px;
+    width: 90px;
+    bottom: -340px;
+    background-color: rgb(255, 147, 255);
+    left: 800px;
+    opacity: 1;
 }
 #eye {
     position: relative;
@@ -102,3 +123,37 @@
 #portal-link {
     
 }
+
+/* intro page  */
+
+body {
+    background-color: gray;
+}
+
+#nav-items {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+   
+    opacity: 0;
+}
+
+.nav-item > a{
+    font-size: x-large;
+    text-decoration: none;
+    color: black
+}
+
+#intro {
+
+    opacity: 0;
+    font-size: 100px;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-right: 100px;
+    margin-top: 200px;
+    
+}
+
+
+
