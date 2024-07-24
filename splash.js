@@ -95,12 +95,14 @@ const enterPortal = () => {
     
       document.body.innerHTML =  
       
-      `<nav id="nav">
+      `
+      
+      <nav id="nav">
       <ul id="nav-items">
-      <li class="nav-item"><a href="">About</a></li>
-      <li class="nav-item"><a href="">Mission</a></li>
-      <li class="nav-item"><a href="">Résumé</a></li>
-      <li class="nav-item"><a href="">Projects</a></li>
+      <li id="about" class="nav-item">About</li>
+      <li id="mission" class="nav-item"><a href="">Mission</a></li>
+      <li id="resume" class="nav-item"><a href="">Résumé</a></li>
+      <li id="projects" class="nav-item"><a href="">Projects</a></li>
    
       <li class="nav-item"><a href="">Contact</a></li>
       </ul>
@@ -112,13 +114,13 @@ const enterPortal = () => {
 
   introDisplay()
   navDisplay()
+  nav()
 
     }, 2000)
   }
 
   // ideally let the animation take over as soon as the character
   // portal contact
-  
 }
 
 
@@ -154,3 +156,49 @@ const navDisplay = () => {
       
       
   }
+
+  const nav = () => {
+
+    const about = document.getElementById('about')
+
+    about.addEventListener('click', (event) => {
+      event.preventDefault()
+      
+      
+        document.body.innerHTML = 
+        `
+        <nav id="nav">
+          <ul id="nav-items">
+              <li class="nav-item"><a href="">About</a></li>
+              <li class="nav-item"><a href="">Mission</a></li>
+              <li class="nav-item"><a href="">Résumé</a></li>
+              <li class="nav-item"><a href="">Projects</a></li>
+              <li class="nav-item"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="about-container">
+            <img id="my-img" src="/Calendula2.jpg"/>
+            <p>Motivated by process. Excited by challenges.</p>
+        </div>
+        `
+        
+        const nav = document.getElementById('nav-items')
+        const div = document.getElementById('about-container')
+
+        div.style.display = 'flex'
+        div.style.flexDirection = 'column'
+        div.style.alignItems = 'center'
+        
+        div.children[1].style.textAlign = 'center'
+
+        div.children[0].style.width = '20%'
+
+        nav.style.opacity = '1'
+        nav.style.justifyContent = 'flex-end'
+        nav.style.marginRight = '150px'
+        
+
+    })
+  }
+
+

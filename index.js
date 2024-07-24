@@ -2,6 +2,7 @@ window.addEventListener('load', () => {
 
     navDisplay()
     introDisplay()
+    
 
 })
 
