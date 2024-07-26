@@ -1,3 +1,24 @@
+#top {
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    opacity: 0;
+    transition: opacity 1s linear;
+    height: 50px;
+    width: 50px;
+    background-color: purple;
+    border-radius: 25px;
+    
+
+}
+#logo:hover {
+    cursor: pointer;
+    
+}
 #rock {
     background-color: gray;
     height: 800px;
@@ -5,76 +26,95 @@
 
 #character {
     position: relative;
-   
-    left: 20px;
-    background-color: purple;
-    height: 70px;
-    width: 35px;
+    
+    left: 200px;
+    /* background-color: purple; */
+    /* height: 70px;
+    width: 35px; */
     z-index: 1;
     
     
     
-    border-top-left-radius: 15px;
+    /* border-top-left-radius: 15px; */
 }
 /* miscrocosm for the portal */
 /* shadows and depth to portal and overall space */
 #portal { 
-    position: absolute;
-    
-    left: 675px;
-    background-color: black;
+    position: relative;
+    bottom: 300px;
+    left: 500px;
+   
     height: 441px;
     width: 350px;
-    border-top-right-radius: 125px;
-    border-top-left-radius: 125px;
+    
     opacity: 1;
+    
 }
 #circle {
-    position: absolute;
-    bottom: 300px;
-    left: 725px;
+    position: relative;
+    bottom: px;
+    left: px;
     background-color: rgb(255, 147, 255);
     height: 50px;
-    width: 115px;
+    width: 50px;
     border-radius: 2px;
     border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    margin: 10px 20px;
 }
 #circletwo {
-    position: absolute;
-    bottom: 300px;
-    left: 860px;
-    background-color: rgb(255, 147, 255);;
+    position: relative;
+    bottom: px;
+    left: px;
+    background-color: rgb(255, 147, 255);
     height: 50px;
-    width: 115px;
+    width: 50px;
     border-radius: 2px;
     border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    margin: 10px 20px;
+}
+#door {
+    height: 80px;
+    width: 60px;
+    background-color: rgb(70, 21, 70);
+    margin: auto;
+    margin-top: 150px;
+    
+    
 }
 #portal-right-side {
-    position: absolute;
-    bottom: 50px;
-    left: 1000px;
-    background-color: gray;
+    position: relative;
+    bottom: px;
+    left: px;
+    background-color: black;
     height: 300px;
     width: 250px;
     border-radius: 30px;
     
 }
 #portal-left-side {
-    position: absolute;
-    bottom: 50px;
-    left: 450px;
-    background-color: gray;
+   
+    bottom: px;
+    left: px;
+    background-color: black;
     height: 300px;
     width: 250px;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 #inner-portal {
+    display: flex;
+    
+    
+    justify-content: space-between;
     position: relative;
-    height: 100px;
-    width: 90px;
-    bottom: -340px;
-    background-color: rgb(255, 147, 255);
-    left: 800px;
+    
+    bottom: px;
+    background-color: rgb(127, 74, 127);
+    left: px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     opacity: 1;
 }
 #eye {
@@ -120,9 +160,6 @@
     width: 25px;
     
 }
-#portal-link {
-    
-}
 
 /* intro page  */
 
@@ -135,7 +172,7 @@ body {
     display: flex;
     list-style: none;
     gap: 20px;
-   
+    
     opacity: 0;
 }
 
@@ -146,13 +183,13 @@ body {
 }
 
 #intro {
-
+    
     opacity: 0;
     font-size: 100px;
     font-weight: bold;
     margin-left: 150px;
     margin-right: 100px;
-    margin-top: 200px;
+    margin-top: 150px;
     
 }
 
@@ -160,5 +197,63 @@ li {
     font-size: x-large;
 }
 
+/* PROJECTS STYLES */
 
+#projects:hover {
+    cursor: pointer;
+    color: rgb(219, 131, 219);
+}
 
+/* ABOUT STYLES */
+
+#my-img {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+#about:hover {
+    cursor: pointer;
+    color: rgb(219, 131, 219);
+}
+
+#about-p-header {
+    font-size: x-large;
+    
+    
+}
+
+#about-p {
+    margin: 0 575px;
+    text-align: center;
+}
+
+/* CONTACT STYLES */
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+#contact:hover {
+
+    cursor: pointer;
+    color: rgb(219, 131, 219);
+
+}
+#contact-info-header {
+    font-weight: bold;
+}
+
+/* MISSION STYLES */
+
+#mission-p {
+    margin: 0 400px;
+    text-align: left;
+    margin-top: 100px;
+
+}
+#mission:hover {
+    cursor: pointer;
+    color: rgb(219, 131, 219);
+}
