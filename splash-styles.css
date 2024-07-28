@@ -10,7 +10,7 @@
     transition: opacity 1s linear;
     height: 50px;
     width: 50px;
-    background-color: purple;
+    background-color: white;
     border-radius: 25px;
     
 
@@ -162,7 +162,7 @@
 /* intro page  */
 
 body {
-    background-color: gray;
+    background-color: purple;
     
 }
 

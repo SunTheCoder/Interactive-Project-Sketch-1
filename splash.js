@@ -13,8 +13,8 @@ const setPosition = () => {
 
   const character = document.getElementById('character')
 
-  character.style.left = '150px'
-  character.style.bottom = '400px'
+  character.style.left = '530px'
+  character.style.bottom = '80px'
 
 }
 
