@@ -14,7 +14,7 @@ const setPosition = () => {
   const character = document.getElementById('character')
 
   character.style.left = '150px'
-  character.style.bottom = '0'
+  character.style.bottom = '400px'
 
 }
 
@@ -76,7 +76,7 @@ const movement = () => {
 }
 
 const enterPortal = () => {
-  const innerPortal = document.getElementById('inner-portal')
+
   const portal = document.getElementById('portal')
   const character = document.getElementById('character')
   
@@ -88,8 +88,7 @@ const enterPortal = () => {
     portal.style.transition = 'opacity 2s linear'
     character.style.opacity = '0'
     character.style.transition = 'opacity 1.2s linear'
-    innerPortal.style.opacity = '0'
-    innerPortal.style.transition = 'opacity 1.2s linear'
+    
    
     setTimeout( () => {
     

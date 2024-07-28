@@ -41,11 +41,9 @@
 /* shadows and depth to portal and overall space */
 #portal { 
     position: relative;
-    bottom: 300px;
+    /* bottom: -300px; */
     left: 500px;
-   
-    height: 441px;
-    width: 350px;
+    
     
     opacity: 1;
     
