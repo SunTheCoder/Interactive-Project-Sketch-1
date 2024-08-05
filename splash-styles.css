@@ -1,3 +1,4 @@
+
 #top {
     margin-right: 50px;
     margin-left: 50px;
@@ -26,7 +27,7 @@
 
 #character {
     position: relative;
-    
+    top: 800px;
     left: 200px;
     /* background-color: purple; */
     /* height: 70px;
@@ -40,10 +41,10 @@
 /* miscrocosm for the portal */
 /* shadows and depth to portal and overall space */
 #portal { 
-    position: relative;
+    /* position: relative; */
     /* bottom: -300px; */
-    left: 500px;
-    
+    /* left: 300px; */
+    margin: auto;
     
     opacity: 1;
     

@@ -13,8 +13,8 @@ const setPosition = () => {
 
   const character = document.getElementById('character')
 
-  character.style.left = '530px'
-  character.style.bottom = '80px'
+  character.style.left = '1000px'
+  character.style.bottom = '50px'
 
 }
 
@@ -36,7 +36,7 @@ const movement = () => {
           //WASD
 
           if (keyName === "d") {
-            if (xPixels <= 590) {
+            if (xPixels <= 1190) {
             xPixels += 10
             console.log(xPixels)
             character.style.left = xPixels + 'px'
@@ -82,7 +82,7 @@ const enterPortal = () => {
   
   let xPixels = +character.style.left.split('px')[0]
 
-  if (xPixels === 590) {
+  if (xPixels === 1130) {
     
     portal.style.opacity = '0'
     portal.style.transition = 'opacity 2s linear'
@@ -101,7 +101,7 @@ const enterPortal = () => {
           
           <nav id="nav">
             <ul id="nav-items">
-                <li id="about" class="nav-item">About</li>
+                <li  class="nav-item"><img id="about" src="/about.png" alt=""></li>
                 <li id="mission" class="nav-item">Mission</li>
                 <li class="nav-item"><a href="">Résumé</a></li>
                 <li id="projects" class="nav-item">Projects</li>
@@ -179,7 +179,7 @@ const navDisplay = () => {
       
       <nav id="nav">
       <ul id="nav-items">
-      <li id="about" class="nav-item">About</li>
+      <li class="nav-item"><img id="about" src="/about.png" alt=""></li>
       <li id="mission" class="nav-item">Mission</li>
       <li class="nav-item"><a href="">Résumé</a></li>
       <li id="projects" class="nav-item">Projects</li>
@@ -227,7 +227,7 @@ const navDisplay = () => {
         
           <nav id="nav">
             <ul id="nav-items">
-            <li id="about" class="nav-item">About</li>
+            <li class="nav-item"><img id="about" src="/about.png" alt=""></li>
             <li id="mission" class="nav-item">Mission</li>
             <li class="nav-item"><a href="">Résumé</a></li>
             <li id="projects" class="nav-item">Projects</li>
@@ -263,7 +263,7 @@ const navDisplay = () => {
         
           <nav id="nav">
             <ul id="nav-items">
-            <li id="about" class="nav-item">About</li>
+            <li  class="nav-item"><img id="about" src="/about.png" alt=""></li>
             <li id="mission" class="nav-item">Mission</li>
             <li class="nav-item"><a href="">Résumé</a></li>
             <li id="projects" class="nav-item">Projects</li>
@@ -293,7 +293,7 @@ const navDisplay = () => {
       
           <nav id="nav">
             <ul id="nav-items">
-            <li id="about" class="nav-item">About</li>
+            <li class="nav-item"><img id="about" src="/about.png" alt=""></li>
             <li id="mission" class="nav-item">Mission</li>
             <li class="nav-item"><a href="">Résumé</a></li>
             <li id="projects" class="nav-item">Projects</li>
@@ -353,7 +353,7 @@ const navDisplay = () => {
           
           <nav id="nav">
             <ul id="nav-items">
-                <li id="about" class="nav-item">About</li>
+                <li class="nav-item"><img id="about" src="/about.png" alt=""></li>
                 <li id="mission" class="nav-item">Mission</li>
                 <li class="nav-item"><a href="">Résumé</a></li>
                 <li id="projects" class="nav-item">Projects</li>
