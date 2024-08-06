@@ -26,17 +26,20 @@
 }
 
 #character {
-    position: relative;
-    top: 800px;
+    
+    position: absolute;
+    top: 1025px;
     left: 200px;
-    /* background-color: purple; */
-    /* height: 70px;
-    width: 35px; */
+    
+    
     z-index: 1;
     
     
     
     /* border-top-left-radius: 15px; */
+}
+#container {
+    height: 800px
 }
 /* miscrocosm for the portal */
 /* shadows and depth to portal and overall space */
@@ -44,7 +47,7 @@
     /* position: relative; */
     /* bottom: -300px; */
     /* left: 300px; */
-    margin: auto;
+    
     
     opacity: 1;
     
@@ -125,6 +128,7 @@
     top: 20px;
 }
 #arm {
+    
     position: relative;
     height: 5px;
     width: 30px;
@@ -163,7 +167,7 @@
 /* intro page  */
 
 body {
-    background-color: purple;
+    background-color: rgb(51, 51, 51);
     
 }
 
@@ -171,6 +175,9 @@ body {
     display: flex;
     list-style: none;
     gap: 20px;
+    color: white;
+    font-family: 'Questrial';
+
     
     opacity: 0;
 }
@@ -178,7 +185,7 @@ body {
 .nav-item > a{
     font-size: x-large;
     text-decoration: none;
-    color: black
+    color: white
 }
 
 #intro {
@@ -189,6 +196,8 @@ body {
     margin-left: 150px;
     margin-right: 100px;
     margin-top: 150px;
+    color: white;
+    font-family: 'Questrial';
     
 }
 
@@ -206,7 +215,7 @@ li {
 /* ABOUT STYLES */
 
 #my-img {
-    border: 1px solid black;
+    border: 3px solid white;
     border-radius: 10px;
     margin-top: 50px;
 }
@@ -217,6 +226,9 @@ li {
 
 #about-p-header {
     font-size: x-large;
+    color: white;
+    font-family: 'Questrial';
+
     
     
 }
@@ -224,6 +236,9 @@ li {
 #about-p {
     margin: 0 575px;
     text-align: center;
+    color: white;
+    font-family: 'Questrial';
+
 }
 
 /* CONTACT STYLES */
@@ -233,6 +248,8 @@ li {
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+    font-family: 'Questrial';
+    color: white;
 }
 #contact:hover {
 
@@ -242,6 +259,9 @@ li {
 }
 #contact-info-header {
     font-weight: bold;
+    font-family: 'Questrial';
+    color: white;
+
 }
 
 /* MISSION STYLES */
@@ -250,6 +270,8 @@ li {
     margin: 0 400px;
     text-align: left;
     margin-top: 100px;
+    font-family: 'Questrial';
+    color: white;
 
 }
 #mission:hover {
